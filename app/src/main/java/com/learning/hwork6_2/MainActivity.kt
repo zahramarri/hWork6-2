@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun recognizeWinner() {
+    fun findWinner() {
         if (binding.editTextSquare1.text == binding.editTextSquare2.text &&
             binding.editTextSquare3.text == binding.editTextSquare2.text ||
             binding.editTextSquare1.text == binding.editTextSquare5.text &&
