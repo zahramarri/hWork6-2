@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSquare1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare4"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+
+    <EditText
+        android:id="@+id/editTextSquare2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare5"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare3"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare1"
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+
+    <EditText
+        android:id="@+id/editTextSquare3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare6"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare2"
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+
+    <EditText
+        android:id="@+id/editTextSquare4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare7"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare1" />
+
+    <EditText
+        android:id="@+id/editTextSquare5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare8"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare6"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare4"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare2" />
+
+    <EditText
+        android:id="@+id/editTextSquare6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextSquare9"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare5"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare3" />
+
+    <EditText
+        android:id="@+id/editTextSquare7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonReset"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare4" />
+
+    <EditText
+        android:id="@+id/editTextSquare8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonReset"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@id/editTextSquare9"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare7"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare5" />
+
+    <EditText
+        android:id="@+id/editTextSquare9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonReset"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextSquare8"
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare6" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSquare8"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/buttonResetText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
