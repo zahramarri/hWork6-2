@@ -20,6 +20,15 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
+    fun recognizeWinner() {
+        if (binding.editTextSquare1.text == binding.editTextSquare2.text &&
+            binding.editTextSquare3.text == binding.editTextSquare2.text ||
+            binding.editTextSquare1.text == binding.editTextSquare5.text &&
+            binding.editTextSquare6.text == binding.editTextSquare5.text ||
+            binding.editTextSquare1.text == binding.editTextSquare4.text &&
+            binding.editTextSquare7.text == binding.editTextSquare4.text) {
+            winner = binding.editTextSquare1.text.first()
+        }
+    }
 
 }
