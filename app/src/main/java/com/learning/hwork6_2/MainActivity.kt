@@ -33,6 +33,20 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare8.text == binding.editTextSquare5.text) {
             winner = binding.editTextSquare2.text.first()
         }
+        if (binding.editTextSquare3.text == binding.editTextSquare5.text &&
+            binding.editTextSquare7.text == binding.editTextSquare5.text ||
+            binding.editTextSquare3.text == binding.editTextSquare6.text &&
+            binding.editTextSquare9.text == binding.editTextSquare6.text) {
+            winner = binding.editTextSquare3.text.first()
+        }
+        if (binding.editTextSquare4.text == binding.editTextSquare5.text &&
+            binding.editTextSquare6.text == binding.editTextSquare5.text) {
+            winner = binding.editTextSquare4.text.first()
+        }
+        if (binding.editTextSquare7.text == binding.editTextSquare8.text &&
+            binding.editTextSquare9.text == binding.editTextSquare8.text) {
+            winner = binding.editTextSquare7.text.first()
+        }
     }
 
 }
