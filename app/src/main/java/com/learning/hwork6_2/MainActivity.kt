@@ -12,26 +12,29 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (binding.editTextSquare1.text.isNotEmpty() ||
-            binding.editTextSquare2.text.isNotEmpty() ||
-            binding.editTextSquare3.text.isNotEmpty() ||
-            binding.editTextSquare4.text.isNotEmpty() ||
-            binding.editTextSquare5.text.isNotEmpty() ||
-            binding.editTextSquare6.text.isNotEmpty() ||
-            binding.editTextSquare7.text.isNotEmpty() ||
-            binding.editTextSquare8.text.isNotEmpty() ||
-            binding.editTextSquare9.text.isNotEmpty()) {
-            findWinner()
-        }
-        binding.textViewStatus.text = when (winner) {
-            'O' -> "player O winner"
-            'X' -> "player X winner"
-            else -> "Draw"
+        while (true) {
+            if (binding.editTextSquare1.text.isNotEmpty() ||
+                binding.editTextSquare2.text.isNotEmpty() ||
+                binding.editTextSquare3.text.isNotEmpty() ||
+                binding.editTextSquare4.text.isNotEmpty() ||
+                binding.editTextSquare5.text.isNotEmpty() ||
+                binding.editTextSquare6.text.isNotEmpty() ||
+                binding.editTextSquare7.text.isNotEmpty() ||
+                binding.editTextSquare8.text.isNotEmpty() ||
+                binding.editTextSquare9.text.isNotEmpty()
+            ) {
+                findWinner()
+            }
+            binding.textViewStatus.text = when (winner) {
+                'O' -> "player O winner"
+                'X' -> "player X winner"
+                else -> "Draw"
+            }
         }
 
     }
 
-    fun findWinner() {
+    private fun findWinner() {
         if (binding.editTextSquare1.text == binding.editTextSquare2.text &&
             binding.editTextSquare3.text == binding.editTextSquare2.text ||
             binding.editTextSquare1.text == binding.editTextSquare5.text &&
