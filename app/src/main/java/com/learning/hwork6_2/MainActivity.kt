@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare7.text == binding.editTextSquare4.text) {
             winner = binding.editTextSquare1.text.first()
         }
+        if (binding.editTextSquare2.text == binding.editTextSquare5.text &&
+            binding.editTextSquare8.text == binding.editTextSquare5.text) {
+            winner = binding.editTextSquare2.text.first()
+        }
     }
 
 }
