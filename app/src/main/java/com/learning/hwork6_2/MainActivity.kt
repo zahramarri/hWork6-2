@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import android.widget.Toast
 import com.learning.hwork6_2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,8 +22,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner1()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -39,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner2()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -55,8 +54,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner3()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -71,8 +70,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner4()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -87,8 +86,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner5()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -103,8 +102,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner6()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -119,8 +118,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner7()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -135,8 +134,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner8()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
@@ -151,8 +150,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findWinner9()
                 binding.textViewStatus.text = when (winner) {
-                    'O' -> "player O winner"
-                    'X' -> "player X winner"
+                    'o' -> "player O winner"
+                    'x' -> "player X winner"
                     else -> "Draw"
                 }
             }
