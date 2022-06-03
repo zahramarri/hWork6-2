@@ -35,7 +35,8 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare2"
@@ -51,7 +52,8 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare3"
         app:layout_constraintStart_toEndOf="@id/editTextSquare1"
-        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare3"
@@ -69,7 +71,8 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/editTextSquare2"
-        app:layout_constraintTop_toBottomOf="@id/textViewStatus" />
+        app:layout_constraintTop_toBottomOf="@id/textViewStatus"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare4"
@@ -86,7 +89,8 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare1" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare5"
@@ -101,7 +105,8 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare6"
         app:layout_constraintStart_toEndOf="@id/editTextSquare4"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare2" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare2"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare6"
@@ -118,56 +123,60 @@
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/editTextSquare5"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare3" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare3"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare7"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
-        android:digits="XO"
-        android:inputType="textNoSuggestions"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="64dp"
         android:background="@color/purple_200"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="64dp"
+        android:digits="XO"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
         app:layout_constraintBottom_toTopOf="@id/buttonReset"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare4" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare4"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare8"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
-        android:digits="XO"
-        android:inputType="textNoSuggestions"
         android:layout_marginBottom="64dp"
         android:background="@color/purple_200"
+        android:digits="XO"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
         app:layout_constraintBottom_toTopOf="@id/buttonReset"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@id/editTextSquare9"
         app:layout_constraintStart_toEndOf="@id/editTextSquare7"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare5" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare5"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextSquare9"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/purple_200"
-        android:gravity="center"
-        android:digits="XO"
-        android:inputType="textNoSuggestions"
-        android:layout_marginBottom="64dp"
-        android:layout_marginEnd="64dp"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:background="@color/purple_200"
+        android:digits="XO"
+        android:gravity="center"
+        android:inputType="textNoSuggestions"
         app:layout_constraintBottom_toTopOf="@id/buttonReset"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/editTextSquare8"
-        app:layout_constraintTop_toBottomOf="@id/editTextSquare6" />
+        app:layout_constraintTop_toBottomOf="@id/editTextSquare6"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/buttonReset"
