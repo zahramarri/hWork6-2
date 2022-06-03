@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:padding="10dp"
-        android:textStyle="bold"
         android:text="@string/textViewStatusText"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -182,13 +182,13 @@
         android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSquare8"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/buttonResetText"
-        android:backgroundTint="@color/teal_200"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/buttonResetText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSquare8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

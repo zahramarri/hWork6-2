@@ -160,7 +160,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        binding.buttonReset.setOnClickListener (::resetGame)
+        binding.buttonReset.setOnClickListener(::resetGame)
 
     }
 
