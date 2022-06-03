@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
+import android.widget.Toast
 import com.learning.hwork6_2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private var winner: Char = ' '
+    private var winner: Char? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -159,6 +161,8 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        binding.buttonReset.setOnClickListener (::resetGame)
+
     }
 
     private fun findWinner1() {
@@ -169,7 +173,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare1.text.toString() == binding.editTextSquare4.text.toString() &&
             binding.editTextSquare7.text.toString() == binding.editTextSquare4.text.toString()
         ) {
-            winner = binding.editTextSquare1.text.first()
+            winner = binding.editTextSquare1.text.firstOrNull()
         }
     }
 
@@ -179,7 +183,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare2.text.toString() == binding.editTextSquare5.text.toString() &&
             binding.editTextSquare8.text.toString() == binding.editTextSquare5.text.toString()
         ) {
-            winner = binding.editTextSquare2.text.first()
+            winner = binding.editTextSquare2.text.firstOrNull()
         }
     }
 
@@ -191,7 +195,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare3.text.toString() == binding.editTextSquare6.text.toString() &&
             binding.editTextSquare9.text.toString() == binding.editTextSquare6.text.toString()
         ) {
-            winner = binding.editTextSquare3.text.first()
+            winner = binding.editTextSquare3.text.firstOrNull()
         }
     }
 
@@ -201,7 +205,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare1.text.toString() == binding.editTextSquare4.text.toString() &&
             binding.editTextSquare7.text.toString() == binding.editTextSquare4.text.toString()
         ) {
-            winner = binding.editTextSquare4.text.first()
+            winner = binding.editTextSquare4.text.firstOrNull()
         }
     }
 
@@ -215,7 +219,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare4.text.toString() == binding.editTextSquare5.text.toString() &&
             binding.editTextSquare6.text.toString() == binding.editTextSquare5.text.toString()
         ) {
-            winner = binding.editTextSquare5.text.first()
+            winner = binding.editTextSquare5.text.firstOrNull()
         }
     }
 
@@ -225,7 +229,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare4.text.toString() == binding.editTextSquare5.text.toString() &&
             binding.editTextSquare6.text.toString() == binding.editTextSquare5.text.toString()
         ) {
-            winner = binding.editTextSquare6.text.first()
+            winner = binding.editTextSquare6.text.firstOrNull()
         }
     }
 
@@ -237,7 +241,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare7.text.toString() == binding.editTextSquare8.text.toString() &&
             binding.editTextSquare9.text.toString() == binding.editTextSquare8.text.toString()
         ) {
-            winner = binding.editTextSquare7.text.first()
+            winner = binding.editTextSquare7.text.firstOrNull()
         }
     }
 
@@ -247,7 +251,7 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare2.text.toString() == binding.editTextSquare5.text.toString() &&
             binding.editTextSquare8.text.toString() == binding.editTextSquare5.text.toString()
         ) {
-            winner = binding.editTextSquare8.text.first()
+            winner = binding.editTextSquare8.text.firstOrNull()
         }
     }
 
@@ -259,7 +263,19 @@ class MainActivity : AppCompatActivity() {
             binding.editTextSquare3.text.toString() == binding.editTextSquare6.text.toString() &&
             binding.editTextSquare9.text.toString() == binding.editTextSquare6.text.toString()
         ) {
-            winner = binding.editTextSquare9.text.first()
+            winner = binding.editTextSquare9.text.firstOrNull()
         }
+    }
+
+    private fun resetGame(view: View) {
+        binding.editTextSquare1.text.clear()
+        binding.editTextSquare2.text.clear()
+        binding.editTextSquare3.text.clear()
+        binding.editTextSquare4.text.clear()
+        binding.editTextSquare5.text.clear()
+        binding.editTextSquare6.text.clear()
+        binding.editTextSquare7.text.clear()
+        binding.editTextSquare8.text.clear()
+        binding.editTextSquare9.text.clear()
     }
 }
